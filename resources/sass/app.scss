@@ -1,0 +1,570 @@
+$base-color: #149eda; //bleu transparence
+$active-color:darken($base-color, 10%);
+$text-color: #333333;
+$include-default-icons: true;
+$primary-color : #60a725; //vert
+$green : #60a725; //vert
+$list-header-color: #666;
+$list-header-bg-color: #ccc;
+$base-gradient : lighten($base-color, 10%);
+$index-bar-bg-color: #ccc;
+$index-bar-color: #666;
+$sheet-bg-color:  $active-color ;
+
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all'; 
+
+@include sencha-toolbar-ui('dark', $base-color, #fff);
+@include sencha-toolbar-ui('green', $primary-color, #fff);
+@include sencha-toolbar-ui('gray', #ccc);
+/**
+ * @class Ext.form.Panel
+ */
+
+/**
+ * @var {color} $form-bg-color
+ * Default background-color for forms.
+ */
+$form-bg-color: #eee !default;
+
+/**
+ * @var {color} $form-light
+ * Light color for form fields, mostly used on field borders.
+ */
+$form-light: #ddd !default;
+
+/**
+ * @var {color} $form-dark
+ * Dark color for form fields, mostly used on labels/text.
+ */
+$form-dark: #333 !default;
+
+/**
+ * @var {measurement} $form-spacing
+ * Default spacing for form fields, used for padding, etc.
+ */
+$form-spacing: .6em !default;
+
+/**
+ * @var {measurement} $form-label-width
+ * Default width for form labels.
+ */
+$form-label-width: 6em !default;
+
+/**
+ * @var {color} $form-label-background-color
+ * The default background color for labels
+ */
+$form-label-background-color: lighten($form-light, 10%);
+$list-color: #000 !default;
+
+/**
+ * @var {color} $list-bg-color
+ * Background-color for list rows.
+ */
+$list-bg-color: #f7f7f7 !default;
+
+/**
+ * @var {color} $include-list-highlights
+ * Optionally disable all list gradients, text-shadows, and box-shadows. Useful for CSS debugging,
+ * non-performant browsers, or minimalist designs.
+ */
+$include-list-highlights: $include-highlights !default;
+
+/**
+ * @var {boolean} $list-zebrastripe
+ * Optionally zebra-stripe the list (alternating background colors).
+ */
+$list-zebrastripe: false !default;
+
+/**
+ * @var {color} $list-pressed-color
+ * Background-color for pressed list rows.
+ */
+$list-pressed-color: lighten($active-color, 50%) !default;
+
+/**
+ * @var {color} $list-active-color
+ * Background-color for selected list rows.
+ */
+$list-active-color: $green !default;
+
+/**
+ * @var {string} $list-active-gradient
+ * Gradient style for selected list rows.
+ */
+$list-active-gradient: $base-gradient !default;
+
+/**
+ * @var {color} $list-header-bg-color
+ * Background-color for list header rows (in grouped lists).
+ */
+$list-header-bg-color: lighten(saturate($base-color, 10%), 20%) !default;
+
+/**
+ * @var {string} $list-header-gradient
+ * Gradient style for list header rows (in grouped lists).
+ */
+$list-header-gradient: $base-gradient !default;
+
+/**
+ * @var {measurement} $list-disclosure-size
+ * Default size (width/height) for disclosure icons.
+ */
+$list-disclosure-size: 32px;
+
+/**
+ * @var {measurement} $list-disclosure-round-size
+ * Default size (width/height) for disclosure icons in a list with a `round` ui.
+ */
+$list-disclosure-round-size: 1.5em;
+
+/**
+ * @var {measurement} $list-round-padding
+ * Default padding for lists with a `round` ui.
+ */
+$list-round-padding: 13px !default;
+
+/**
+ * @var {measurement} $list-rounded-radius
+ * Default border-radius for items in rounded list
+ */
+$list-rounded-radius: .4em !default;
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+
+@mixin modus-button($color, $text-color) {
+  @include transition(all .25s ease);
+  @include border-radius(0.1em);
+  margin-bottom: 0;
+  font-size: 1em;
+  background: $color;
+  border: none;
+  color: $text-color;
+  text-decoration: none;
+  .x-button-label {
+    padding:  0;
+  }
+  &.x-button-pressing {
+    background: darken($color, 10);
+  }
+}
+
+.default {
+  @include modus-button($base-color,$text-color);
+}
+
+.primary {
+  @include modus-button($primary-color,$text-color);
+}
+
+.info {
+  @include modus-button(#2c97de,$text-color);
+}
+
+.danger {
+  @include modus-button(#e94b35,$text-color);
+}
+.white {
+  @include modus-button(#ffffff,$text-color);
+}
+.right { float:right;}
+.left { float:left;}
+a, .link {
+  color: $base-color;
+  text-decoration: none;
+}
+a:visited {
+  color: lighten($base-color, 15%) !important;
+}
+body { font-family: 'Open Sans', helvetica ;background-color:#ffffff}
+
+h1 {
+        font-size: 1.5em;
+        margin-bottom: .2em;
+        color: $text-color;
+    }
+h2 {
+        font-size: 1.2em;
+        margin-bottom: .2em;
+        color: $base-color;
+        small {
+          color: $active-color;
+        }
+    }
+h3 {
+    margin-bottom : 0.2em;
+    font-size: 1.2em;
+}
+h4 {
+    margin-bottom: 0.2em;
+}
+
+
+.x-list-item-label > .session {
+
+    @include st-box;
+    @include st-box-orient(horizontal);
+    @include st-box-align(center);
+
+    .title {
+        @include st-box-flex(1);
+        font-weight: bold;
+        font-size: 95%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .room {
+        font-size: 10px !important;
+        color: $base-color;
+        margin-left: .5em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
+
+.x-panel-html {
+    background: #fff;
+}
+.x-innerhtml {
+width: auto;
+    p {
+        font-size: 1em;
+        line-height: 1.5em;
+        margin: 0.5em;
+    }
+}
+
+.x-list-header.dark {
+    color: #000;
+    font-size: 0.7em;
+    padding: 0.4em 1.3em;
+}
+
+.tweets {
+  h2 {
+    padding-bottom: 3px;
+  }
+  img {
+    float: left;
+  }
+  .tweet {
+    font-size: 70%;
+    margin-left: 60px;
+    min-height: 50px;
+  }
+  .x-list-item {
+    border-top: 1px solid white;
+  }
+  .posted {
+    float: right;
+  }
+}
+
+.tweets {
+    h2 {
+        font-weight: bold;
+    }
+    img {
+        border-radius: 5px;
+				max-width: 50px;
+				max-height: 50px;
+    }
+    .tweet {
+        color: #333;
+    }
+}
+
+.x-list-item.speaker {
+
+    font-size: 0.9em;
+    line-height: 1.4em;
+
+    .avatar {
+        background-position: center center;
+        -webkit-border-radius: 0.5em;
+        float: left;
+        border: 0;
+        border-radius: 0.5em;
+        width: 45px;
+        height: 45px;
+        background-size: 47px auto;
+    }
+    h3 {
+        font-weight: bold;
+        margin-left: 60px;
+    }
+    h4 {
+        color: #999;
+        margin-left: 60px;
+    }
+}
+
+.speakerInfo {
+
+    background: #fff;
+
+    .header {
+        @include background-gradient(#eee);
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ddd;
+        padding: 1em 0.8em;
+    }
+
+    .avatar {
+        background-position: center center;
+        -webkit-border-radius: 0.5em;
+        float: left;
+        border: 0;
+        border-radius: 0.5em;
+        margin-right: 10px;
+        width: 60px;
+        height: 60px;
+        background-size: 62px auto;
+    }
+
+    p {
+        color: #333;
+        line-height: 1.5em;
+        padding: 0.4em 1.2em;
+        font-size: 0.8em;
+    }
+}
+
+.video {
+    line-height: 1.5em;
+    .thumb {
+        margin: -0.6em;
+        width: 2.6em;
+        height: 2.6em;
+        background-color: #eee;
+        background-size: 2.6em auto;
+        background-position: center center;
+        float: left;
+        margin-right: 0.6em;
+    }
+    .name {
+        font-weight: bold;
+        font-size: 0.85em;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.x-list-normal .x-list-item.x-item-selected.x-list-item-tpl,.x-list-normal .x-list-item.x-item-selected .x-dock-horizontal
+	{
+	border-top-color: #107cab;
+}
+
+.x-list .x-list-item.x-item-selected .x-dock-horizontal,.x-list .x-list-item.x-item-selected.x-list-item-tpl
+	{
+	background-image: none;
+	background-color: white;
+	color: green;
+}
+
+.htmlPage {
+
+	h2 {
+font-weight: 300;
+font-size: 1.6em;
+color: #60a725;
+padding-top: .6em;
+}
+	.accordionContent{}
+	p {
+		font-weight: 300;
+		font-size: .8em;
+		line-height: 1.4;
+		padding-bottom: .6em;
+		border: none;
+		color: $text-color;
+		strong {font-weight: 300;font-size:1em}
+		a{color: $text-color;}
+	}
+	ul {
+	padding-bottom: .6em;
+		li { 
+			list-style-type: none;
+			padding-bottom: .6em;
+		a{color: $text-color;} 
+		}
+	}
+	ul.compactLi {
+		li {list-style-type: none;}
+		li.listNone{list-style-type: none;}
+	}
+}
+.logo {
+	background-color: #FFFFFF;
+	display: inline-block;
+	-webkit-border-radius: 10%;
+	margin: 0.2em;
+	width: 2em;
+	height: 2em;
+}
+
+.x-img-logo {
+	margin: 1em auto;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	-webkit-border-radius: 15px;
+}
+
+.x-container .rightmenu {
+	background-color: #FFFFFF;
+	padding: 0;
+}
+.menunestedlist-inner{
+	min-height: 400px !important;
+	height:100%;
+	background-color: #FFFFFF;
+}
+
+.x-menu .x-button {
+	padding: 1em;
+	border: none;
+	padding-right: 1em;
+	border-radius: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	text-align: right;
+	background-color: transparent;
+	margin: 0px;
+}
+
+.x-list-meds {
+	.x-img { 
+		margin-right:1em;
+		background-position: center center; 
+		border: 1px solid ;
+		width: 60px;
+		height: 60px;
+	}
+
+	.x-list-item {
+	    padding: 1em;
+	    border-bottom: 1px solid darken(#EEEEEE, 5);
+	    -webkit-transition: linear .2s background;
+		    .name div {
+		      font-weight: bold;
+		    }
+	  }
+ }
+.x-form-login { 
+	background-color:$base-color !important;
+	.x-form-fieldset-innerlogin { margin: .5em auto; max-width: 500px;}
+	.x-form-label-innerlogin { margin: .5em auto; max-width: 500px; color:$base-color;font-weight: bold; }
+	
+	.x-form-fieldset .x-field {
+		border-radius:0.4em;	
+		margin: 1em;
+		border: 1px solid darken(#EEEEEE, 5);
+	}
+	.x-button.x-button-action {	margin: 1em auto; max-width: 300px;}
+}
+.x-form-med { 
+	background-color:#fff;
+	.x-form-fieldset-med { margin: .5em auto; max-width: 500px;}
+	.x-form-fieldset .x-field {
+		border-radius:0.4em;	
+		margin: 1em;
+		border: 1px solid darken(#EEEEEE, 5);
+	}
+	.x-button.x-button-action {	margin: 1em auto; max-width: 300px;}
+}
+.x-mask {
+background: url() center center rgba(255, 255, 255, 0.95) repeat;
+	.x-mask-inner {
+	background: none;
+	}
+}
+
+.center-menu {
+	margin: auto;
+}
+.center-menu-inner {
+	position: absolute;
+	top:10%;
+	margin: auto;
+}
+
+.center-menu-container {
+	line-height: 4em;
+	margin: auto;
+	text-align: left;
+	width: 28em;
+	padding: 2em;
+}
+
+.center-menu-item, center-menu-data {
+	width: 10em;
+	height: 10em;
+	display: inline;
+	-webkit-border-radius: 1em;
+	margin:1em;
+}
+
+.center-menu-image {
+	width: 10em;
+	height: 10em;
+	-webkit-border-radius: 1em;
+}
+.x-button {
+
+ color: $green;
+ background-color: none;
+ border: none;
+}
+.x-scroll-bar-y.active , .x-scroll-bar-x.active {
+  display:none;  
+  width:0px;
+}
+/* icon on small screens */
+@media (max-width:45.9375em) {}
+@media (max-width:32.5em) {
+.center-menu {}
+.center-menu-inner {}
+.center-menu-container {
+line-height: 2em;
+margin: auto;
+text-align: left;
+width: 14em;
+padding: 1em;
+}
+.center-menu-item, center-menu-data {
+	width: 5em;
+	height: 5em;
+	-webkit-border-radius: 0.5em;
+	margin:0.5em;
+}
+
+.center-menu-image {
+	width: 5em;
+	height: 5em;
+	-webkit-border-radius: 0.5em;
+}
+}

@@ -1,0 +1,1383 @@
+/**
+ * Pimcore
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.pimcore.org/license
+ *
+ * @copyright  Copyright (c) 2009-2013 pimcore GmbH (http://www.pimcore.org)
+ * @license    http://www.pimcore.org/license     New BSD License
+ */
+
+.tm_icon_clone  {
+    background: url(/transparence/resources/images/icon/application_double.png) left center no-repeat !important;
+}
+
+.tm_icon_droptarget  {
+    background: url(/transparence/resources/images/icon/drop-16.png) left center no-repeat !important;
+}
+
+.tm_icon_document {
+    background: url(/transparence/resources/images/icon/page_white.png) left center no-repeat !important;
+}
+
+.tm_icon_page {
+    background: url(/transparence/resources/images/icon/page.png) left center no-repeat !important;
+}
+.tm_icon_email {
+    background: url(/transparence/resources/images/icon/email.png) left center no-repeat !important;
+}
+
+.tm_icon_asset {
+    background: url(/transparence/resources/images/icon/asset.png) left center no-repeat !important;
+}
+.tm_icon_object {
+    background: url(/transparence/resources/images/icon/object.png) left center no-repeat !important;
+}
+
+.tm_icon_snippet {
+    background: url(/transparence/resources/images/icon/snippet.png)  left center no-repeat !important;
+}
+
+.tm_icon_link {
+    background: url(/transparence/resources/images/icon/link.png)  left center no-repeat !important;
+}
+
+.tm_icon_hardlink {
+    background: url(/transparence/resources/images/icon/page_link.png)  left center no-repeat !important;
+}
+
+.tm_icon_folder {
+    background: url(/pimcore/static/js/lib/ext/resources/images/default/tree/folder.gif) left center no-repeat !important;
+}
+
+.tm_icon_export{
+    background: url(/transparence/resources/images/icon/page_white_put.png) no-repeat !important;
+}
+
+.tm_icon_import{
+    background: url(/transparence/resources/images/icon/page_white_get.png) no-repeat !important;
+}
+
+.tm_icon_page_add {
+    background: url(/transparence/resources/images/icon/page_add.png);
+}
+
+.tm_icon_snippet_add {
+    background: url(/transparence/resources/images/icon/snippet_add.png);
+}
+
+.tm_icon_email_transfer {
+    background: url(/transparence/resources/images/icon/email_transfer.png);
+}
+
+.tm_icon_email_add {
+    background: url(/transparence/resources/images/icon/email_add.png);
+}
+
+.tm_icon_link_add {
+    background: url(/transparence/resources/images/icon/link_add.png);
+}
+
+.tm_icon_hardlink_add {
+    background: url(/transparence/resources/images/icon/page_link.png);
+}
+
+.tm_icon_folder_add {
+    background: url(/transparence/resources/images/icon/folder_add.png);
+}
+
+.tm_icon_delete {
+    background: url(/transparence/resources/images/icon/cross.png) no-repeat !important;
+}
+
+.tm_icon_add {
+    background: url(/transparence/resources/images/icon/add.png) no-repeat !important;
+}
+
+.tm_icon_save {
+    background: url(/transparence/resources/images/icon/save.png) no-repeat !important;
+}
+
+.tm_icon_edit_key {
+    background: url(/transparence/resources/images/icon/edit_key.png);
+}
+
+.tm_icon_home, .tm_icon_site {
+    background: url(/transparence/resources/images/icon/home.png) no-repeat !important;
+}
+
+.tm_icon_reload {
+    background: url(/transparence/resources/images/icon/reload.png) no-repeat !important;
+}
+
+
+
+/* assets */
+
+.tm_icon_doc, .tm_icon_docx {
+    background: url(/transparence/resources/images/icon/page_word.png) no-repeat !important;
+}
+
+.tm_icon_zip, .tm_icon_rar, .tm_icon_ace, .tm_icon_7z, .tm_icon_gz, .tm_icon_tar {
+    background: url(/transparence/resources/images/icon/box.png) no-repeat !important;
+}
+
+.tm_icon_sql, .tm_icon_mdb {
+    background: url(/transparence/resources/images/icon/database.png) no-repeat !important;
+}
+
+.tm_icon_swf, .tm_icon_fla {
+    background: url(/transparence/resources/images/icon/page_white_flash.png) no-repeat !important;
+}
+
+.tm_icon_jpeg, .tm_icon_jpg, .tm_icon_png, .tm_icon_gif, .tm_icon_tif, .tm_icon_psd, .tm_icon_eps, .tm_icon_ai, .tm_icon_svg, .tm_icon_svgz, .tm_icon_bmp, .tm_icon_pcx, .tm_icon_iff, .tm_icon_pct, .tm_icon_wmf {
+    background: url(/transparence/resources/images/icon/picture.png) no-repeat !important;
+}
+
+.tm_icon_pdf {
+    background: url(/transparence/resources/images/icon/page_white_acrobat.png) no-repeat !important;
+}
+
+.tm_icon_eps {
+    background: url(/transparence/resources/images/icon/page_white_paint.png) no-repeat !important;
+}
+
+.tm_icon_svg {
+    background: url(/transparence/resources/images/icon/script_code_red.png) no-repeat !important;
+}
+
+.tm_icon_php, .tm_icon_phps, .tm_icon_php4, .tm_icon_php5 .tm_icon_php3 {
+    background: url(/transparence/resources/images/icon/page_white_php.png) no-repeat !important;
+}
+
+.tm_icon_xls, .tm_icon_xlsx {
+    background: url(/transparence/resources/images/icon/page_white_excel.png) no-repeat !important;
+}
+
+.tm_icon_ppt, .tm_icon_pps, .tm_icon_ppsx, .tm_icon_pptx {
+    background: url(/transparence/resources/images/icon/page_white_powerpoint.png) no-repeat !important;
+}
+
+.tm_icon_txt, .tm_icon_log {
+    background: url(/transparence/resources/images/icon/page_white_text.png) no-repeat !important;
+}
+
+.tm_icon_html, .tm_icon_htm {
+    background: url(/transparence/resources/images/icon/page_world.png) no-repeat !important;
+}
+
+.tm_icon_exe {
+    background: url(/transparence/resources/images/icon/application_xp_terminal.png) no-repeat !important;
+}
+
+.tm_icon_css {
+    background: url(/transparence/resources/images/icon/application_xp_terminal.png) no-repeat !important;
+}
+
+.tm_icon_js {
+    background: url(/transparence/resources/images/icon/script.png) no-repeat !important;
+}
+
+.tm_icon_mpg, .tm_icon_mpeg, .tm_icon_divx, .tm_icon_avi, .tm_icon_mov, .tm_icon_wmv, .tm_icon_3gp, .tm_icon_f4v, .tm_icon_flv, .tm_icon_mp4, .tm_icon_webm {
+    background: url(/transparence/resources/images/icon/film.png) no-repeat !important;
+}
+
+
+
+
+
+.tm_icon_loading {
+    background: url(/transparence/resources/images/panel-loader.gif) left center no-repeat !important;
+}
+
+
+.tm_icon_systemlog {
+    background: url(/transparence/resources/images/icon/text_padding_bottom.png) left center no-repeat !important;
+}
+
+.tm_icon_menu_file {
+    background: url(/transparence/resources/images/icon/application.png) no-repeat !important;
+}
+
+.tm_icon_menu_extras {
+    background: url(/transparence/resources/images/icon/plugin.png) no-repeat !important;
+}
+
+.tm_icon_menu_settings {
+    background: url(/transparence/resources/images/icon/wrench.png) no-repeat !important;
+}
+
+.tm_icon_menu_help {
+    background: url(/transparence/resources/images/icon/help.png) no-repeat !important;
+}
+
+.tm_icon_users {
+    background: url(/transparence/resources/images/icon/folder_user.png) left center no-repeat !important;
+}
+
+.tm_icon_roles {
+    background: url(/transparence/resources/images/icon/group_link.png) left center no-repeat !important;
+}
+
+.tm_icon_thumbnails {
+    background: url(/transparence/resources/images/icon/pictures.png) left center no-repeat !important;
+}
+
+.tm_icon_system {
+    background: url(/transparence/resources/images/icon/book.png) left center no-repeat !important;
+}
+
+.tm_icon_plugin {
+    background: url(/transparence/resources/images/icon/plugin.png) left center no-repeat !important;
+}
+
+.tm_icon_extensionmanager {
+    background: url(/transparence/resources/images/icon/plugin.png) left center no-repeat !important;
+}
+
+
+.tm_icon_extensionmanager_admin {
+    background: url(/transparence/resources/images/icon/plugin_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_extensionmanager_download {
+    background: url(/transparence/resources/images/icon/plugin_add.png) left center no-repeat !important;
+}
+
+.tm_icon_extensionmanager_share {
+    background: url(/transparence/resources/images/icon/plugin_go.png) left center no-repeat !important;
+}
+
+.tm_icon_menu_plugin_download {
+    background: url(/transparence/resources/images/icon/plugin_go.png) no-repeat !important;
+}
+
+.tm_icon_doctypes {
+    background: url(/transparence/resources/images/icon/page_copy.png) left center no-repeat !important;
+}
+
+.tm_icon_update {
+    background: url(/transparence/resources/images/icon/connect.png) no-repeat !important;
+}
+
+.tm_icon_languages{
+    background: url(/transparence/resources/images/icon/book_open.png) left center no-repeat !important;
+}
+
+.tm_icon_menu_documentation {
+    background: url(/transparence/resources/images/icon/book_open.png) no-repeat !important;
+}
+
+.tm_icon_menu_bugs {
+    background: url(/transparence/resources/images/icon/bug.png) no-repeat !important;
+}
+
+.tm_icon_menu_about {
+    background: url(/transparence/resources/images/icon/information.png) no-repeat !important;
+}
+
+.tm_icon_menu_versions {
+    background: url(/transparence/resources/images/icon/layers.png) no-repeat !important;
+}
+
+.tm_icon_menu_workflow {
+    background: url(/transparence/resources/images/icon/group_go.png) no-repeat !important;
+}
+
+
+.tm_icon_menu_extension {
+    background: url(/transparence/resources/images/icon/package.png) no-repeat !important;
+}
+
+.tm_icon_backup {
+    background: url(/transparence/resources/images/icon/drive.png) no-repeat !important;
+}
+
+.tm_icon_glossary {
+    background: url(/transparence/resources/images/icon/page_white_text.png) left center no-repeat !important;
+}
+
+.tm_icon_menu_close_tabs {
+    background: url(/transparence/resources/images/icon/tab_delete.png) no-repeat !important;
+}
+
+.tm_icon_menu_unpublished_documents {
+    background: url(/transparence/resources/images/icon/page_error.png) no-repeat !important;
+}
+
+.tm_icon_menu_search {
+    background: url(/transparence/resources/images/icon/magnifier.png) no-repeat !important;
+}
+
+.tm_icon_menu_import {
+    background: url(/transparence/resources/images/icon/database_connect.png) no-repeat !important;
+}
+
+.tm_icon_menu_export {
+    background: url(/transparence/resources/images/icon/database_go.png) no-repeat !important;
+}
+
+.tm_icon_menu_clear_cache {
+    background: url(/transparence/resources/images/icon/lightning.png) no-repeat !important;
+}
+
+.tm_icon_fieldcollections {
+    background: url(/transparence/resources/images/icon/table_multiple.png) left center no-repeat !important;
+}
+
+.tm_icon_publish {
+    background: url(/transparence/resources/images/icon/publish.png) no-repeat !important;
+}
+
+.tm_icon_unpublish {
+    background: url(/transparence/resources/images/icon/unpublish.png) no-repeat !important;
+}
+
+.tm_icon_user {
+    background: url(/transparence/resources/images/icon/user.png) left center no-repeat !important;
+}
+
+.tm_icon_usergroup{
+    background: url(/transparence/resources/images/icon/group_gear.png) no-repeat !important;
+}
+
+.tm_icon_user_add {
+    background: url(/transparence/resources/images/icon/user_add.png) no-repeat !important;
+}
+
+.tm_icon_user_delete {
+    background: url(/transparence/resources/images/icon/user_delete.png) no-repeat !important;
+}
+
+.tm_icon_usergroup_add{
+    background: url(/transparence/resources/images/icon/group_add.png) no-repeat !important;
+}
+
+.tm_icon_usergroup_delete{
+    background: url(/transparence/resources/images/icon/group_delete.png) no-repeat !important;
+}
+.tm_icon_properties {
+    background: url(/transparence/resources/images/icon/tag_green.png) left center no-repeat !important;
+}
+
+
+.tm_icon_copy {
+    background: url(/transparence/resources/images/icon/page_white_copy.png) no-repeat !important;
+}
+
+.tm_icon_cut {
+    background: url(/transparence/resources/images/icon/cut.png) no-repeat !important;
+}
+
+.tm_icon_paste {
+    background: url(/transparence/resources/images/icon/page_white_paste.png) no-repeat !important;
+}
+
+.tm_icon_cursor {
+    background: url(/transparence/resources/images/icon/cursor.png) no-repeat !important;
+}
+
+.tm_icon_upload {
+    background: url(/transparence/resources/images/icon/arrow_up.png) no-repeat !important;
+}
+
+
+.tm_icon_menu_logout {
+    background: url(/transparence/resources/images/icon/door_in.png) no-repeat !important;
+}
+
+.tm_icon_edit_link {
+    background: url(/transparence/resources/images/icon/world_edit.png) no-repeat !important;
+}
+
+.tm_icon_edit_video {
+    background: url(/transparence/resources/images/icon/film_edit.png) no-repeat !important;
+}
+
+.tm_icon_classes {
+    background: url(/transparence/resources/images/icon/database_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_class_delete {
+    background: url(/transparence/resources/images/icon/database_delete.png) no-repeat !important;
+}
+
+.tm_icon_class_add {
+    background: url(/transparence/resources/images/icon/database_add.png) no-repeat !important;
+}
+
+.tm_icon_class {
+    background: url(/transparence/resources/images/icon/database_gear.png) no-repeat !important;
+}
+
+.tm_icon_layout_region {
+    background: url(/transparence/resources/images/icon/layout.png) no-repeat !important;
+}
+
+.tm_icon_layout_accordion {
+    background: url(/transparence/resources/images/icon/application_split.png) no-repeat !important;
+}
+
+.tm_icon_layout_fieldset {
+    background: url(/transparence/resources/images/icon/application_form.png) no-repeat !important;
+}
+
+.tm_icon_layout_panel {
+    background: url(/transparence/resources/images/icon/application.png) no-repeat !important;
+}
+
+.tm_icon_layout_tabpanel {
+    background: url(/transparence/resources/images/icon/tab.png) no-repeat !important;
+}
+
+.tm_icon_layout_button {
+    background: url(/transparence/resources/images/icon/picture_empty.png) no-repeat !important;
+}
+
+.tm_icon_button {
+    background: url(/transparence/resources/images/icon/picture_empty.png) no-repeat !important;
+}
+
+.tm_icon_layout_text {
+    background: url(/transparence/resources/images/icon/application_view_list.png) no-repeat !important;
+}
+
+.tm_icon_text {
+    background: url(/transparence/resources/images/icon/application_view_list.png) no-repeat !important;
+}
+
+
+.tm_icon_data_group_structured {
+    background: url(/transparence/resources/images/icon/application_tile_vertical.png) no-repeat !important;
+}
+
+.tm_icon_data_group_select {
+    background: url(/transparence/resources/images/icon/select.png) no-repeat !important;
+}
+
+.tm_icon_data_group_numeric {
+    background: url(/transparence/resources/images/icon/text_list_numbers.png) no-repeat !important;
+}
+
+.tm_icon_data_group_text {
+    background: url(/transparence/resources/images/icon/text_align_justify.png) no-repeat !important;
+}
+
+.tm_icon_data_group_date {
+    background: url(/transparence/resources/images/icon/calendar.png) no-repeat !important;
+}
+.tm_icon_data_group_other {
+    background: url(/transparence/resources/images/icon/folder.png) no-repeat !important;
+}
+
+.tm_icon_data_group_geo {
+    background: url(/transparence/resources/images/icon/map.png) no-repeat !important;
+}
+
+.tm_icon_data_group_relation {
+    background: url(/transparence/resources/images/icon/chart_organisation.png) no-repeat !important;
+}
+
+.tm_icon_data_group_crm {
+    background: url(/transparence/resources/images/icon/group_link.png) no-repeat !important;
+}
+
+.tm_icon_password {
+    background: url(/transparence/resources/images/icon/textfield_key.png) no-repeat !important;
+}
+
+.tm_icon_language {
+    background: url(/transparence/resources/images/icon/comment.png) no-repeat !important;
+}
+
+.tm_icon_languagemultiselect {
+    background: url(/transparence/resources/images/icon/comment.png) no-repeat !important;
+}
+
+.tm_icon_multiselect {
+    background: url(/transparence/resources/images/icon/text_list_bullets.png) no-repeat !important;
+}
+
+.tm_icon_country {
+    background: url(/transparence/resources/images/icon/map.png) no-repeat !important;
+}
+
+.tm_icon_countrymultiselect {
+    background: url(/transparence/resources/images/icon/map.png) no-repeat !important;
+}
+
+.tm_icon_geopoint {
+    background: url(/transparence/resources/images/icon/flag_green.png) no-repeat !important;
+}
+
+.tm_icon_geobounds {
+    background: url(/transparence/resources/images/icon/map_edit.png) no-repeat !important;
+}
+
+.tm_icon_geopolygon {
+    background: url(/transparence/resources/images/icon/map_edit.png) no-repeat !important;
+}
+
+.tm_icon_time {
+    background: url(/transparence/resources/images/icon/time.png) no-repeat !important;
+}
+
+.tm_icon_fieldcollections {
+    background: url(/transparence/resources/images/icon/table_multiple.png) no-repeat !important;
+}
+
+.tm_icon_objectbricks {
+    background: url(/transparence/resources/images/icon/bricks.png) no-repeat !important;
+}
+
+.tm_icon_objectbrick_add {
+    background: url(/transparence/resources/images/icon/brick_add.png) no-repeat !important;
+}
+
+.tm_icon_multihref {
+    background: url(/transparence/resources/images/icon/text_list_bullets.png) no-repeat !important;
+}
+
+.tm_icon_table {
+    background: url(/transparence/resources/images/icon/table.png) no-repeat !important;
+}
+
+.tm_icon_table_tab {
+    background: url(/transparence/resources/images/icon/table.png) left center no-repeat !important;
+}
+
+.tm_icon_structuredTable {
+    background: url(/transparence/resources/images/icon/table_gear.png) no-repeat !important;
+}
+
+.tm_icon_region {
+    background: url(/transparence/resources/images/icon/layout.png) no-repeat !important;
+}
+
+.tm_icon_accordion {
+    background: url(/transparence/resources/images/icon/application_split_normal.png) no-repeat !important;
+}
+
+.tm_icon_fieldset {
+    background: url(/transparence/resources/images/icon/application_form.png) no-repeat !important;
+}
+
+.tm_icon_panel {
+    background: url(/transparence/resources/images/icon/application.png) no-repeat !important;
+}
+
+.tm_icon_tabpanel {
+    background: url(/transparence/resources/images/icon/tab.png) no-repeat !important;
+}
+
+.tm_icon_objectsid {
+    background: url(/transparence/resources/images/icon/objectid.png) no-repeat !important;
+}
+
+
+
+
+
+.tm_icon_input {
+    background: url(/transparence/resources/images/icon/textfield.png) no-repeat !important;
+}
+
+.tm_icon_firstname, .tm_icon_lastname {
+    background: url(/transparence/resources/images/icon/textfield_user.png) no-repeat !important;
+}
+
+.tm_icon_newsletterActive {
+    background: url(/transparence/resources/images/icon/email_go.png) no-repeat !important;
+}
+
+.tm_icon_newsletterConfirmed {
+    background: url(/transparence/resources/images/icon/email_tick.png) no-repeat !important;
+}
+
+.tm_icon_textarea {
+    background: url(/transparence/resources/images/icon/text_align_left.png) no-repeat !important;
+}
+
+.tm_icon_wysiwyg {
+    background: url(/transparence/resources/images/icon/vcard.png) no-repeat !important;
+}
+
+.tm_icon_href {
+    background: url(/transparence/resources/images/icon/link_data.png) no-repeat !important;
+}
+
+.tm_icon_image {
+    background: url(/transparence/resources/images/icon/picture.png) no-repeat !important;
+}
+
+.tm_icon_hotspotimage {
+    background: url(/transparence/resources/images/icon/pictures_thumbs.png) no-repeat !important;
+}
+
+.tm_icon_numeric {
+    background: url(/transparence/resources/images/icon/text_list_numbers.png) no-repeat !important;
+}
+
+.tm_icon_select {
+    background: url(/transparence/resources/images/icon/select.png) no-repeat !important;
+}
+
+.tm_icon_gender {
+    background: url(/transparence/resources/images/icon/select_user.png) no-repeat !important;
+}
+
+.tm_icon_date {
+    background: url(/transparence/resources/images/icon/calendar.png) no-repeat !important;
+}
+
+.tm_icon_datetime {
+    background: url(/transparence/resources/images/icon/calendar.png) no-repeat !important;
+}
+
+
+.tm_icon_nonownerobjects {
+    background: url(/transparence/resources/images/icon/database_link.png) no-repeat !important;
+}
+
+.tm_icon_objects {
+    background: url(/transparence/resources/images/icon/database.png) no-repeat !important;
+}
+
+.tm_icon_objectsMetadata {
+    background: url(/transparence/resources/images/icon/database_link.png) no-repeat !important;
+}
+
+.tm_icon_object_add {
+    background: url(/transparence/resources/images/icon/database_add.png) no-repeat !important;
+}
+
+.tm_icon_object_import {
+    background: url(/transparence/resources/images/icon/database_connect.png) no-repeat !important;
+}
+
+.tm_icon_routes {
+    background: url(/transparence/resources/images/icon/sitemap_color.png) left center no-repeat !important;
+}
+
+.tm_icon_redirects {
+    background: url(/transparence/resources/images/icon/world_go.png) left center no-repeat !important;
+}
+
+
+.tm_icon_save_medium {
+    background: url(/transparence/resources/images/icon/media-floppy.png) left center no-repeat !important;
+}
+
+.tm_icon_publish_medium {
+    background: url(/transparence/resources/images/icon/publish-medium.png) left center no-repeat !important;
+}
+
+.tm_icon_unpublish_medium {
+    background: url(/transparence/resources/images/icon/unpublish-medium.png) left center no-repeat !important;
+}
+
+.tm_icon_delete_medium {
+    background: url(/transparence/resources/images/icon/edit-clear.png) left center no-repeat !important;
+}
+
+.tm_icon_reload_medium {
+    background: url(/transparence/resources/images/icon/view-refresh.png) left center no-repeat !important;
+}
+
+.tm_icon_extras_medium {
+    background: url(/transparence/resources/images/icon/extras-medium.png) left center no-repeat !important;
+}
+
+.tm_icon_cursor_medium {
+    background: url(/transparence/resources/images/icon/web-browser.png) left center no-repeat !important;
+}
+
+.tm_icon_upload_medium {
+    background: url(/transparence/resources/images/icon/upload-medium.png) left center no-repeat !important;
+}
+
+.tm_icon_download_zip_medium {
+    background: url(/transparence/resources/images/icon/download-zip-medium.png) left center no-repeat !important;
+}
+
+.tm_icon_download_medium {
+    background: url(/transparence/resources/images/icon/download-medium.png) left center no-repeat !important;
+}
+
+.tm_icon_download_showintree {
+    background: url(/transparence/resources/images/icon/system-file-manager.png) left center no-repeat !important;
+}
+
+
+.tm_icon_tab_dependencies {
+    background: url(/transparence/resources/images/icon/chart_organisation.png) left center no-repeat !important;
+}
+
+.tm_icon_tab_search {
+    background: url(/transparence/resources/images/icon/zoom.png) left center no-repeat !important;
+}
+
+.tm_icon_tab_edit {
+    background: url(/transparence/resources/images/icon/application_form_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_tab_preview {
+    background: url(/transparence/resources/images/icon/page_white_magnify.png) left center no-repeat !important;
+}
+
+.tm_icon_tab_settings {
+    background: url(/transparence/resources/images/icon/wrench.png) left center no-repeat !important;
+}
+
+.tm_icon_tab_targeting {
+    background: url(/transparence/resources/images/icon/user_suit.png) left center no-repeat !important;
+}
+
+.tm_icon_tab_properties {
+    background: url(/transparence/resources/images/icon/tag_green.png) left center no-repeat !important;
+}
+
+.tm_icon_tab_versions {
+    background: url(/transparence/resources/images/icon/page_white_stack.png) left center no-repeat !important;
+}
+
+.tm_icon_tab_permissions {
+    background: url(/transparence/resources/images/icon/group_key.png) left center no-repeat !important;
+}
+
+.tm_icon_tab_variants {
+    background: url(/transparence/resources/images/icon/database_copy.png) left center no-repeat !important;
+}
+
+
+.tm_icon_menu_seemode {
+    background: url(/transparence/resources/images/icon/eye.png) left center no-repeat !important;
+}
+
+.plugin_installed{
+    background: url(/transparence/resources/images/icon/plugin.png) left center no-repeat !important;
+}
+
+.plugin_notinstalled{
+    background: url(/transparence/resources/images/icon/plugin_disabled.png) left center no-repeat !important;
+}
+
+.tm_icon_notification_success {
+    background: url(/transparence/resources/images/icon/tick.png) left center no-repeat !important;
+}
+
+.tm_icon_notification_info {
+    background: url(/transparence/resources/images/icon/information.png) left center no-repeat !important;
+}
+
+
+.tm_icon_notification_error {
+    background: url(/transparence/resources/images/icon/delete.png) left center no-repeat !important;
+}
+
+.tm_icon_tab_view {
+    background: url(/transparence/resources/images/icon/eye.png) left center no-repeat !important;
+}
+
+
+.tm_icon_tab_schedule {
+    background: url(/transparence/resources/images/icon/clock.png) left center no-repeat !important;
+}
+
+.tm_icon_translations {
+    background: url(/transparence/resources/images/icon/translation.png) left center no-repeat !important;
+}
+
+.tm_icon_menu_forms {
+    background: url(/transparence/resources/images/icon/application_form_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_checkbox {
+    background: url(/transparence/resources/images/icon/tick.png) left center no-repeat !important;
+}
+
+.tm_icon_slider {
+    background: url(/transparence/resources/images/icon/timeline_marker.png) left center no-repeat !important;
+}
+
+
+
+
+.tag_table_addcol {
+    background: url(/transparence/resources/images/icon/coladd.png) !important;
+}
+
+.tag_table_delcol {
+    background: url(/transparence/resources/images/icon/coldel.png) !important;
+}
+
+.tag_table_addrow {
+    background: url(/transparence/resources/images/icon/rowadd.png) !important;
+}
+
+.tag_table_delrow {
+    background: url(/transparence/resources/images/icon/rowdel.png) !important;
+}
+
+.tag_table_empty {
+    background: url(/transparence/resources/images/icon/bin_closed.png) !important;
+}
+
+
+.tm_icon_start {
+    background: url(/transparence/resources/images/icon/resultset_next.png) left center no-repeat !important;
+}
+
+.tm_icon_stop {
+    background: url(/transparence/resources/images/icon/stop.png) left center no-repeat !important;
+}
+
+
+.tm_icon_portlet_add {
+    background: url(/transparence/resources/images/icon/add.png) left center no-repeat !important;
+}
+
+.tm_icon_portlet_modified_objects {
+    background: url(/transparence/resources/images/icon/database_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_portlet_modified_documents {
+    background: url(/transparence/resources/images/icon/page_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_portlet_modified_assets {
+    background: url(/transparence/resources/images/icon/brick_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_portlet_custom_reports {
+    background: url(/transparence/resources/images/icon/database.png) left center no-repeat !important;
+}
+
+
+
+.tm_icon_portlet_modification_statistic {
+    background: url(/transparence/resources/images/icon/chart_curve_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_portlet_feed {
+    background: url(/transparence/resources/images/icon/feed.png) left center no-repeat !important;
+}
+
+.tm_icon_asset_folder_preview {
+    background: url(/transparence/resources/images/icon/picture.png) left center no-repeat !important;
+}
+
+.tm_icon_welcome {
+    background: url(/transparence/resources/images/icon/star.png) left center no-repeat !important;
+}
+
+.tm_icon_reports {
+    background: url(/transparence/resources/images/icon/chart_pie.png) left center no-repeat !important;
+}
+
+
+.tm_icon_report_analytics_group {
+    background: url(/transparence/resources/images/icon/chart_curve.png) left center no-repeat !important;
+}
+
+.tm_icon_report_webmastertools_group {
+    background: url(/transparence/resources/images/icon/wrench.png) left center no-repeat !important;
+}
+
+.tm_icon_report_websiteoptimizer_group {
+    background: url(/transparence/resources/images/icon/money.png) left center no-repeat !important;
+}
+
+.tm_icon_batch {
+    background: url(/transparence/resources/images/icon/table_go.png) left center no-repeat !important;
+}
+
+.tm_icon_custom_views {
+    background: url(/transparence/resources/images/icon/database_lightning.png) left center no-repeat !important;
+}
+
+.tm_icon_website {
+    background: url(/transparence/resources/images/icon/wrench_orange.png) left center no-repeat !important;
+}
+
+.tm_icon_analytics {
+    background: url(/transparence/resources/images/icon/chart_pie.png) left center no-repeat !important;
+}
+
+.tm_icon_analytics_overview, .tm_icon_seo_overview {
+    background: url(/transparence/resources/images/icon/chart_pie.png) left center no-repeat !important;
+}
+
+.tm_icon_analytics_explorer {
+    background: url(/transparence/resources/images/icon/chart_curve.png) left center no-repeat !important;
+}
+
+.tm_icon_analytics_navigation {
+    background: url(/transparence/resources/images/icon/chart_organisation.png) left center no-repeat !important;
+}
+
+.tm_icon_analytics_apply {
+    background: url(/transparence/resources/images/icon/tick.png) left center no-repeat !important;
+}
+
+.tm_icon_websiteoptimizer_abcreate {
+    background: url(/transparence/resources/images/icon/text_replace.png) left center no-repeat !important;
+}
+
+.tm_icon_recyclebin {
+    background: url(/transparence/resources/images/icon/bin_closed.png) left center no-repeat !important;
+}
+
+.tm_icon_flush_recyclebin {
+    background: url(/transparence/resources/images/icon/bin_empty.png) left center no-repeat !important;
+}
+
+.tm_icon_restore {
+    background: url(/transparence/resources/images/icon/arrow_redo.png) left center no-repeat !important;
+}
+
+.tm_icon_apply {
+    background: url(/transparence/resources/images/icon/tick.png) left center no-repeat !important;
+}
+
+.tm_icon_open {
+    background: url(/transparence/resources/images/icon/accept.png) left center no-repeat !important;
+}
+
+.tm_icon_accept {
+    background: url(/transparence/resources/images/icon/accept.png) left center no-repeat !important;
+}
+
+.tm_icon_image_editor_simple {
+    background: url(/transparence/resources/images/icon/picture_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_image_editor_advanced {
+    background: url(/transparence/resources/images/icon/pictures.png) left center no-repeat !important;
+}
+
+.tm_icon_language_download {
+    background: url(/transparence/resources/images/icon/add.png) left center no-repeat !important;
+}
+
+.tm_icon_language_update {
+    background: url(/transparence/resources/images/icon/arrow_refresh.png) left center no-repeat !important;
+}
+
+
+.tm_icon_tree_unpublish {
+    background: url(/transparence/resources/images/icon/delete.png) left center no-repeat !important;
+}
+
+.tm_icon_tree_publish {
+    background: url(/transparence/resources/images/icon/tick.png) left center no-repeat !important;
+}
+.tm_icon_plus {
+    background: url(/transparence/resources/images/icon/add.png) !important;
+}
+.tm_icon_plus_no_repeat {
+    background: url(/transparence/resources/images/icon/add.png) left center no-repeat !important;
+}
+
+.tm_icon_minus {
+    background: url(/transparence/resources/images/icon/delete.png) left center no-repeat !important;
+}
+
+.tm_icon_up {
+    background: url(/transparence/resources/images/icon/arrow_up.png) !important;
+}
+
+.tm_icon_down {
+    background: url(/transparence/resources/images/icon/arrow_down.png) !important;
+}
+
+.tm_icon_fieldcollection {
+    background: url(/transparence/resources/images/icon/table_multiple.png) left center no-repeat !important;
+}
+
+.tm_icon_fieldcollection_add {
+    background: url(/transparence/resources/images/icon/table_multiple_add.png) left center no-repeat !important;
+}
+
+.tm_icon_search {
+    background: url(/transparence/resources/images/icon/magnifier.png) left center no-repeat !important;
+}
+
+.tm_icon_empty {
+    background: url(/transparence/resources/images/icon/cross.png) left center no-repeat !important;
+}
+
+.tm_icon_class_import {
+    background: url(/transparence/resources/images/icon/application_get.png) left center no-repeat !important;
+}
+
+.tm_icon_class_export {
+    background: url(/transparence/resources/images/icon/application_put.png) left center no-repeat !important;
+}
+
+.tm_icon_edit {
+    background: url(/transparence/resources/images/icon/pencil_go.png) left center no-repeat !important;
+}
+
+.tm_icon_lock {
+    background: url(/transparence/resources/images/icon/lock_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_lock_delete {
+    background: url(/transparence/resources/images/icon/lock_delete.png) left center no-repeat !important;
+}
+
+.tm_icon_lock_add {
+    background: url(/transparence/resources/images/icon/lock_add.png) left center no-repeat !important;
+}
+
+.tm_icon_lock_add_propagate {
+    background: url(/transparence/resources/images/icon/lock_go.png) left center no-repeat !important;
+}
+
+
+.tm_icon_area {
+    background: url(/transparence/resources/images/icon/shape_square_add.png) left center no-repeat !important;
+}
+
+.tm_icon_fileexplorer {
+    background: url(/transparence/resources/images/icon/folder_magnify.png) left center no-repeat !important;
+}
+
+.tm_icon_newfile {
+    background: url(/transparence/resources/images/icon/page_white_add.png) left center no-repeat !important;
+}
+
+.tm_icon_newfolder {
+    background: url(/transparence/resources/images/icon/folder_add.png) left center no-repeat !important;
+}
+
+.tm_icon_asset_add {
+    background: url(/transparence/resources/images/icon/brick_add.png) left center no-repeat !important;
+}
+
+.tm_icon_upload_multiple {
+    background: url(/transparence/resources/images/icon/disk_multiple_add.png) left center no-repeat !important;
+}
+
+.tm_icon_upload_zip {
+    background: url(/transparence/resources/images/icon/box_add.png) left center no-repeat !important;
+}
+
+.tm_icon_import_server {
+    background: url(/transparence/resources/images/icon/server_add.png) left center no-repeat !important;
+}
+
+.tm_icon_localizedfields {
+    background: url(/transparence/resources/images/icon/translation.png) left center no-repeat !important;
+}
+
+.tm_icon_download {
+    background: url(/transparence/resources/images/icon/drive_disk.png) left center no-repeat !important;
+}
+
+.tm_icon_maintenance {
+    background: url(/transparence/resources/images/icon/stop.png) left center no-repeat !important;
+}
+
+
+.tm_icon_object_csv_import {
+    background: url(/transparence/resources/images/icon/table_go.png) left center no-repeat !important;
+}
+.tm_icon_archive_import {
+    background: url(/transparence/resources/images/icon/folder_go.png) left center no-repeat !important;
+}
+.tm_icon_archive_export{
+    background: url(/transparence/resources/images/icon/disconnect.png) left center no-repeat !important;
+}
+
+.tm_icon_upload_single {
+    background: url(/transparence/resources/images/icon/brick_add.png) left center no-repeat !important;
+}
+
+.tm_icon_decline {
+    background: url(/transparence/resources/images/icon/decline.png) left center no-repeat !important;
+}
+
+.tm_icon_disable {
+    background: url(/transparence/resources/images/icon/delete.png) left center no-repeat !important;
+}
+
+.tm_icon_grid_column_config {
+    background: url(/transparence/resources/images/icon/table_gear.png) left center no-repeat !important;
+}
+
+.tm_icon_info {
+    background: url(/transparence/resources/images/icon/computer_magnify.png) left center no-repeat !important;
+}
+
+.tm_icon_php {
+    background: url(/transparence/resources/images/icon/page_white_php.png) left center no-repeat !important;
+}
+
+
+.tm_icon_movetotab {
+    background: url(/transparence/resources/images/icon/tab_go.png) left center no-repeat !important;
+}
+
+.tm_icon_server_info {
+    background: url(/transparence/resources/images/icon/server_chart.png) left center no-repeat !important;
+}
+
+.tm_icon_mysql {
+    background: url(/transparence/resources/images/icon/mysql.png) left center no-repeat !important;
+}
+
+.tm_icon_videothumbnails {
+    background: url(/transparence/resources/images/icon/film_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_videoedit {
+    background: url(/transparence/resources/images/icon/film_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_role_add {
+    background: url(/transparence/resources/images/icon/group_add.png) left center no-repeat !important;
+}
+
+.tm_icon_seo_document {
+    background: url(/transparence/resources/images/icon/report_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_robots {
+    background: url(/transparence/resources/images/icon/page_white_text.png) left center no-repeat !important;
+}
+
+.tm_icon_seo {
+    background: url(/transparence/resources/images/icon/zoom_in.png) left center no-repeat !important;
+}
+
+.tm_icon_open_in_new_window {
+    background: url(/transparence/resources/images/icon/cursor.png) left center no-repeat !important;
+}
+
+.tm_icon_show_in_tree {
+    background: url(/transparence/resources/images/icon/application_side_tree.png) left center no-repeat !important;
+}
+
+.tm_icon_tag {
+    background: url(/transparence/resources/images/icon/tag.png) left center no-repeat !important;
+}
+
+.tm_icon_httperrorlog {
+    background: url(/transparence/resources/images/icon/table_error.png) left center no-repeat !important;
+}
+
+.tm_icon_groupby {
+    background: url(/transparence/resources/images/icon/table_multiple.png) left center no-repeat !important;
+}
+
+.tm_icon_desktop {
+    background: url(/transparence/resources/images/icon/computer.png) left center no-repeat !important;
+}
+
+.tm_icon_mobile {
+    background: url(/transparence/resources/images/icon/phone.png) left center no-repeat !important;
+}
+
+.tm_icon_systemrequirements {
+    background: url(/transparence/resources/images/icon/laptop_magnify.png) left center no-repeat !important;
+}
+
+.tm_icon_tab_notes {
+    background: url(/transparence/resources/images/icon/note.png) left center no-repeat !important;
+}
+
+.tm_icon_qrcode {
+    background: url(/transparence/resources/images/icon/qr-code.png) left center no-repeat !important;
+}
+
+.tm_icon_cleanup {
+    background: url(/transparence/resources/images/icon/bin.png) left center no-repeat !important;
+}
+
+.tm_icon_openpage {
+    background: url(/transparence/resources/images/icon/world_go.png) left center no-repeat !important;
+}
+
+.tm_icon_import_url {
+    background: url(/transparence/resources/images/icon/world_add.png) left center no-repeat !important;
+}
+
+.tm_icon_add_child {
+    background: url(/transparence/resources/images/icon/folder_add.png) left center no-repeat !important;
+}
+
+.tm_icon_open_document_by_url {
+    background: url(/transparence/resources/images/icon/page_find.png) left center no-repeat !important;
+}
+
+.tm_icon_open_document_by_id {
+    background: url(/transparence/resources/images/icon/page_go.png) left center no-repeat !important;
+}
+
+.tm_icon_open_asset_by_id {
+    background: url(/transparence/resources/images/icon/brick_go.png) left center no-repeat !important;
+}
+
+.tm_icon_open_object_by_id {
+    background: url(/transparence/resources/images/icon/database_go.png) left center no-repeat !important;
+}
+
+.tm_icon_overwrite {
+    background: url(/transparence/resources/images/icon/shape_square_select.png) left center no-repeat !important;
+}
+
+.tm_icon_targeting {
+    background: url(/transparence/resources/images/icon/status_online.png) left center no-repeat !important;
+}
+
+.tm_icon_convert {
+    background: url(/transparence/resources/images/icon/arrow_rotate_clockwise.png) left center no-repeat !important;
+}
+
+.tm_icon_change_type {
+    background: url(/transparence/resources/images/icon/change_type.png) left center no-repeat !important;
+}
+
+.tm_icon_key {
+    background: url(/transparence/resources/images/icon/key.png) left center no-repeat !important;
+}
+
+.tm_icon_keys {
+    background: url(/transparence/resources/images/icon/keys.png) left center no-repeat !important;
+}
+
+.tm_icon_keyValue  {
+    background: url(/transparence/resources/images/icon/key.png) left center no-repeat !important;
+}
+
+.tm_icon_cross {
+    background: url(/transparence/resources/images/icon/cross.png) center no-repeat !important;
+}
+
+.tm_icon_tv {
+    background: url(/transparence/resources/images/icon/television.png) left no-repeat !important;
+}
+
+.tm_icon_tablet {
+    background: url(/transparence/resources/images/icon/image.png) left no-repeat !important;
+}
+
+
+.tm_icon_bouncemail {
+    background: url(/transparence/resources/images/icon/email_error.png) left no-repeat !important;
+}
+
+.tm_icon_report_seo_group {
+    background: url(/transparence/resources/images/icon/zoom_in.png) left no-repeat !important;
+}
+
+.tm_icon_seo_detail {
+    background: url(/transparence/resources/images/icon/chart_curve.png) left no-repeat !important;
+}
+
+.tm_icon_report_social_group {
+    background: url(/transparence/resources/images/icon/group.png) left no-repeat !important;
+}
+
+.tm_icon_newsletter {
+    background: url(/transparence/resources/images/icon/email_transfer.png) left no-repeat !important;
+}
+
+.tm_icon_send {
+    background: url(/transparence/resources/images/icon/email_start.png) left no-repeat !important;
+}
+
+.tm_icon_send_test {
+    background: url(/transparence/resources/images/icon/email_star.png) left no-repeat !important;
+}
+
+.tm_icon_menu_clear_thumbnails {
+    background: url(/transparence/resources/images/icon/lightning.png) 8px center no-repeat !important;
+}
+
+.tm_icon_mic {
+    background: url(/transparence/resources/images/icon/user_comment.png) left center no-repeat !important;
+}
+
+.tm_icon_image_add_hotspot {
+    background: url(/transparence/resources/images/icon/picture_edit.png) left center no-repeat !important;
+}
+
+.tm_icon_image_region {
+    background: url(/transparence/resources/images/icon/picture_region.png) left center no-repeat !important;
+}
+
+.tm_icon_add_marker {
+    background: url(/transparence/resources/images/icon/picture_marker.png) left center no-repeat !important;
+}
+
+.tm_icon_clear_marker {
+    background: url(/transparence/resources/images/icon/clearmarker.png) left center no-repeat !important;
+}
+
+.tm_icon_add_hotspot {
+    background: url(/transparence/resources/images/icon/picture_hotspot.png) left center no-repeat !important;
+}
+
+.tm_icon_edit_pdf_text {
+    background: url(/transparence/resources/images/icon/page_white_text.png) left center no-repeat !important;
+}
+
+.tm_icon_add_data {
+    background: url(/transparence/resources/images/icon/table_row_insert.png) left center no-repeat !important;
+}
+
+.tm_icon_tree_variant {
+    background: url(/transparence/resources/images/icon/database_copy.png) left center no-repeat !important;
+}
+
+.tm_icon_plugin_add {
+    background: url(/transparence/resources/images/icon/plugin_add.png) left center no-repeat !important;
+}
+
+.tm_icon_options {
+    background: url(/transparence/resources/images/icon/overlays.png) left center no-repeat !important;
+}
+
+.tm_icon_personas, .tm_icon_persona, .tm_icon_personamultiselect {
+    background: url(/transparence/resources/images/icon/user_gray_cool.png) left center no-repeat !important;
+}
+
+.tm_icon_persona_select {
+    padding-left: 20px !important;
+    background: url(/transparence/resources/images/icon/user_gray_cool.png) 2px center no-repeat #fff !important;
+}
+
+.tm_icon_highlight {
+    background: url(/transparence/resources/images/icon/lightning.png) left center no-repeat !important;
+}
+
+.tm_icon_info_large {
+    background: url(/transparence/resources/images/icon/info_medium.png) left center no-repeat !important;
+}
+
+.tm_icon_info {
+    background: url(/transparence/resources/images/icon/info.png) left center no-repeat !important;
+}
+
+.tm_icon_video {
+    background: url(/transparence/resources/images/icon/film.png) left center no-repeat !important;
+}
+
+.tm_icon_email_blacklist {
+    background: url(/transparence/resources/images/icon/email_stop.png) left center no-repeat !important;
+}
+
+.tm_icon_metadata {
+    background: url(/transparence/resources/images/icon/page_white_text.png) left center no-repeat !important;
+}
+
+.tm_icon_search_and_move {
+    background: url(/transparence/resources/images/icon/database_copy.png) left center no-repeat !important;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>transparence</title>
+    <style type="text/css">
+         /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+            background-color: #149eda;
+        }
+        body.x-desktop {
+			font-size: 114%;
+		}
+
+        .appLoadingIndicator, #appLoadingIndicator {
+            position: absolute;
+            top: 30%;
+            margin-top: 1em;
+            text-align: center;
+            width: 100%;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 0s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+
+        .appLoadingIndicator > img, #appLoadingIndicator > img  {
+            background-color: #FFFFFF;
+            display: inline-block;
+            -webkit-border-radius: 2em;
+            margin: 2em;
+            width: 10em;
+            height: 10em;
+            opacity: 1;
+        }
+         .appLoadingIndicator > p, #appLoadingIndicator > p  {
+            color: #FFFFFF;
+            margin: auto;
+            width: 15em;
+        }
+        @-webkit-keyframes appLoadingIndicator{
+            0% {
+                opacity: 1
+            }
+            50% {
+                opacity: 1
+            }
+            100% {
+                opacity: 1
+            }
+        }
+        @media (max-width:25em) {
+                .appLoadingIndicator > img, #appLoadingIndicator > img  {
+            background-color: #FFFFFF;
+            display: inline-block;
+            -webkit-border-radius: 1em;
+            margin: 1em;
+            width: 7em;
+            height: 7em;
+            opacity: 1;
+        }
+         .appLoadingIndicator > p, #appLoadingIndicator > p  {
+            color: #FFFFFF;
+            margin: auto;
+            width: 10em;
+        }
+        
+        }
+
+    </style>
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script id="microloader" type="text/javascript" src=".sencha/app/microloader/development.js"></script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+       <img src="resources/images/logo/logo-transparence-medicale.png" alt="Transparence medicale">
+       <p style="color:black;">Votre avis sur les médicaments que vous consommez</p>
+  	</div>
+   
+</body>
+</html>
